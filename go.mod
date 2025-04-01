@@ -9,7 +9,6 @@ require (
 	github.com/dlclark/regexp2 v1.11.0
 	github.com/fatih/camelcase v1.0.0
 	github.com/igorsobreira/titlecase v0.0.0-20140109233139-4156b5b858ac
-	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/mattn/go-isatty v0.0.17 // indirect
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
@@ -29,6 +28,7 @@ require (
 
 require (
 	codeberg.org/jmansfield/go-modrinth v0.5.0
+	github.com/packwiz/packwiz v0.0.0-20250119231123-241f24b550f6
 	github.com/spf13/pflag v1.0.5
 	github.com/unascribed/FlexVer/go/flexver v1.0.0
 	golang.org/x/exp v0.0.0-20230118134722-a68e582fa157
@@ -51,5 +51,3 @@ require (
 )
 
 go 1.19
-
-replace github.com/packwiz/packwiz => github.com/jstoneburner/packwiz
