@@ -1,4 +1,4 @@
-module github.com/packwiz/packwiz
+module github.com/jstoneburner/packwiz
 
 require (
 	github.com/BurntSushi/toml v1.2.1
@@ -51,3 +51,5 @@ require (
 )
 
 go 1.19
+
+replace github.com/packwiz/packwiz => github.com/jstoneburner/packwiz
