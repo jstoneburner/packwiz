@@ -179,23 +179,13 @@ func (f *IndexFiles) toTomlRep() indexFilesTomlRepresentation {
 		}
 	}
 
-	// Updated sorting function for Go 1.21+
-	slices.SortFunc(rep, func(a indexFile, b indexFile) int {
+	slices.SortFunc(rep, func(a indexFile, b indexFile) bool {
 		if a.File == b.File {
-			if a.Alias < b.Alias {
-				return -1
-			} else if a.Alias > b.Alias {
-				return 1
-			}
-			return 0
+			return a.Alias < b.Alias
+		} else {
+			return a.File < b.File
 		}
-
-		if a.File < b.File {
-			return -1
-		}
-		return 1
 	})
 
 	return rep
 }
-
